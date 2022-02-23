@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+    font-family: basic-sans;
+    color: black;
+    font-size: 16px;
+}
+
+html, body {    
+	margin: 0;
+    background-color: #cb9824;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
