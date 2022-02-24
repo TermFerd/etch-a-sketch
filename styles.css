@@ -17,6 +17,20 @@ html, body {
 .main {
     height: 100%;
     width: 100%;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-wrapper {
+    align-self: center;
+    height: 100vw;
+    width: 100vw;
+    max-height: 80vh;
+    max-width: 80vh;
+    margin: 10%;
+    position: relative;
     border: none;
 }
 
@@ -26,14 +40,6 @@ html, body {
     height: 100%;
     position: absolute;
     background-color: white;
-    border: none;
-}
-
-.container-wrapper {
-    height: 75vw;
-    width: 75vw;
-    margin: 30px auto;
-    position: relative;
     border: none;
 }
 
