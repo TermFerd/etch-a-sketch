@@ -19,11 +19,24 @@ function changeSquareColor() {
     this.style.backgroundColor ='black';
 }; 
 
+function clearGrid() {
+    let gridSquares = container.querySelectorAll('div.gridSquare');
+    gridSquares.forEach(gridSquare => gridSquare.style.backgroundColor = 'white');
+};
 
-
+function gridSizeChange() {
+    let gridSizeInput = prompt("How big the grid, master?")
+    if (gridSizeInput < 40) {
+        return createGrid(gridSizeInput);
+        } else {
+        gridSizeInput = prompt("Too many squares! Try again...");
+        }
+};
 
 createGrid(16);
 
+clearButton.addEventListener('click', clearGrid);
+sizeChange.addEventListener('click', gridSizeChange);
 
 
 
