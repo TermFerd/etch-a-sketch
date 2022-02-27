@@ -26,7 +26,7 @@ function clearGrid() {
 
 function gridSizeChange() {
     let gridSizeInput = prompt("How big the grid, master?")
-    if (gridSizeInput < 40) {
+    if (gridSizeInput <= 64) {
         return createGrid(gridSizeInput);
         } else {
         gridSizeInput = prompt("Too many squares! Try again...");
