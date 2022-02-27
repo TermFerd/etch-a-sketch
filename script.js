@@ -1,4 +1,6 @@
 const container = document.querySelector('.container');
+const clearButton = document.querySelector('#clear');
+const sizeChange = document.querySelector('#size');
 
 function createGrid (gridNumber) { 
     let gridArea = gridNumber * gridNumber;
@@ -9,12 +11,13 @@ function createGrid (gridNumber) {
         container.style.gridTemplateRows = `repeat(${gridNumber}, 1fr)`;
         container.insertAdjacentElement('beforeend', gridItem);
     } 
-}
+    let gridSquares = container.querySelectorAll('div.gridSquare');
+    gridSquares.forEach(gridSquare => gridSquare.addEventListener('mouseover',changeSquareColor));
+};
 
-function squareColorChange () {
-
-
-}
+function changeSquareColor() {
+    this.style.backgroundColor ='black';
+}; 
 
 
 

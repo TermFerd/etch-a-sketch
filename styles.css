@@ -21,30 +21,70 @@ html, body {
     border: none;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.controls {
+    display: flex;
+    align-items: flex-end;
+    height: 40%;
+    width: 50vh;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons {
+    background-color: white;
+    display: flex;
+    width: 50%;
+    margin-top: 25%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    border: 0.4em solid white;
+}
+
+#clear {
+    border-right: 0.2em solid white;
+}
+
+#clear:hover {
+    background-color: red;
+}
+
+#size {
+    border-left: 0.2em solid white;
+}
+
+#size:hover {
+    background-color: lightblue;
+}
+
+h1 {
+    color: black;
+    font-family: Futura;
+    font-size: 1.4em;
 }
 
 .container-wrapper {
-    align-self: center;
-    height: 100vw;
-    width: 100vw;
-    max-height: 80vh;
-    max-width: 80vh;
-    margin: 10%;
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
     border: none;
 }
 
 .container {
     display: grid;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    position: relative;
     background-color: white;
     border: none;
 }
 
 div.gridSquare {
-    border: 0.2px solid black;
 }
 
 
